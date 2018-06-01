@@ -11,7 +11,7 @@ x1 = np.array([1, 2, 3, 1, 5, 6, 5, 5, 6, 7, 8, 9, 7, 9])
 x2 = np.array([1, 3, 2, 2, 8, 6, 7, 6, 7, 1, 2, 1, 1, 3])
 X = np.array(list(zip(x1, x2))).reshape(len(x1), 2)
 
-# 话第一个图
+# 画第一个图
 plt.subplot(3, 2, 1)
 plt.scatter(x1, x2)
 plt.xlim([0, 10])
