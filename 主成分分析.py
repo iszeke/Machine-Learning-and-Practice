@@ -67,7 +67,7 @@ class DigitsRecognition():
     def score_of_yes_pca(self, n_components):
         "使用pca，查看支持向量机的性能"
         # pca
-        pca = PCA(n_components=20)
+        pca = PCA(n_components=n_components)
         X_train_pca = pca.fit_transform(self.X_train)
         # 支持向量机
         pca_svc = SVC(kernel='linear')
